@@ -4,6 +4,8 @@ import express from "express";
 import fsPromises from "fs/promises";
 import fs from "fs";
 import pino from "pino";
+
+// 🔥 5.0 UPDATE: @whiskeysockets/baileys වෙනුවට සෘජුවම gifted-baileys භාවිතය
 import makeWASocket, {
     useMultiFileAuthState,
     delay,
@@ -12,6 +14,7 @@ import makeWASocket, {
     jidNormalizedUser,
     fetchLatestBaileysVersion
 } from "gifted-baileys";
+
 import { parsePhoneNumber } from "awesome-phonenumber"; 
 
 const router = express.Router();
@@ -81,7 +84,7 @@ router.get("/", async (req, res) => {
                 printQRInTerminal: false,
                 logger: pino({ level: "silent" }),
                 
-                // 🚀 2026 STABILITY ENGINE: Ubuntu Chrome Signature (Official v7)
+                // 🚀 2026 STABILITY ENGINE: Ubuntu Chrome Signature (Official v7 / Gifted Baileys)
                 browser: Browsers.ubuntu('Chrome'),
                 
                 // 🔥 EXTREME RAM SAVING FLAGS FOR PAIR SITE
