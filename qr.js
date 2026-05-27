@@ -4,18 +4,19 @@ import express from "express";
 import fsPromises from "fs/promises";
 import fs from "fs";
 import pino from "pino";
+import QRCode from "qrcode";
 
-// 🔥 5.0 UPDATE: @whiskeysockets/baileys වෙනුවට සෘජුවම gifted-baileys භාවිතය
-import makeWASocket, {
+// 🔥 OFFICIAL DOCUMENTATION IMPORT FIX (ES MODULES)
+import pkg from "gifted-baileys";
+const {
+    default: makeWASocket,
     useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
     Browsers,
     jidNormalizedUser,
     fetchLatestBaileysVersion
-} from "gifted-baileys"; 
-
-import QRCode from "qrcode";
+} = pkg;
 
 const router = express.Router();
 
