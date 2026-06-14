@@ -15,7 +15,7 @@
   "author": "MMT",
   "license": "ISC",
   "dependencies": {
-    "gifted-baileys": "2.5.8",
+    "gifted-baileys": "github:rcedubot/X",
     "awesome-phonenumber": "7.8.0",
     "body-parser": "^2.2.2",
     "express": "^5.2.1",
